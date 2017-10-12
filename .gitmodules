@@ -1,0 +1,3 @@
+[submodule "wafer2-client-sdk"]
+	path = wafer2-client-sdk
+	url = https://github.com/vertex-young/wafer2-client-sdk.git
