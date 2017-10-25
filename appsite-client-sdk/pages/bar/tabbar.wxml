@@ -1,0 +1,9 @@
+<template name="asTabbar">
+  <view class="as-tabbar {{cls}}" id="{{id}}">
+    <block wx:for="{{tabbarItems}}" wx:key="id">
+      <view bindtap="{{asBindTapItem}}" id="{{index}}" data-id='{{item.id}}' class="as-tabbar__item {{asCurrent==index ? 'as-bar__item_on':''}} {{itemCls}}">
+        <text class="as-tabbar__label">{{item.name}}</text>
+      </view>
+    </block>
+  </view>
+</template>

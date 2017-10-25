@@ -1,0 +1,26 @@
+.as-carousel {
+  position: relative;
+}
+
+.as-carousel .as-carousel__indicator {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 20rpx;
+  display: flex;
+  margin-left: 20rpx;
+  justify-content: left;
+}
+
+.as-carousel .as-carousel__indicator .as-carousel__indicator_item {
+  margin: 0 3rpx;
+  width: 10rpx;
+  height: 10rpx;
+  background-color: #fff;
+  border-radius: 10rpx;
+  transition: all 0.6s;
+}
+
+.as-carousel .as-carousel__indicator .as-carousel__indicator_item.active {
+  width: 40rpx;
+}

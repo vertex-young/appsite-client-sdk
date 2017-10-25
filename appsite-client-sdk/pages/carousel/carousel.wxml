@@ -1,0 +1,16 @@
+<template name="asCarousel">
+  <view class="as-carousel">
+    <swiper circular="{{asCircular}}" vertical="{{asVertical}}" current="{{asCurrent}}" bindchange="{{asBindChangeCarousel}}" autoplay="{{asAutoplay}}" interval="{{asInterval}}" duration="{{asDuration}}" indicator-color="{{asIndicatorColor}}" indicator-dots="{{asIndicatorDots}}" indicator-active-color="{{asIndicatorActiveColor}}" style="height:{{asHeight}};">
+      <block wx:for="{{asItems}}" wx:key="unique">
+        <swiper-item bindtap="{{asBindTapCarouselItem}}" data-id="{{item.id}}" data-cmd="{{item.cmd}}">
+          <image src="{{item.imgUrl}}" class="slide-image" mode="widthFix" style='width:100%;' />
+        </swiper-item>
+      </block>
+    </swiper>
+    <view class="as-carousel__indicator">
+      <block wx:for="{{asItems}}" wx:key="unique">
+        <view class="as-carousel__indicator_item{{index == asCurrent ? ' active' : ''}}" style="background-color:{{asIndicatorActiveColor}}"></view>
+      </block>
+    </view>
+  </view>
+</template>

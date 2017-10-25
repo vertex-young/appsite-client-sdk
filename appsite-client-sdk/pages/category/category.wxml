@@ -1,0 +1,14 @@
+<template name="asCategory">
+  <scroll-view bindscroll="{{asBindScrollCategory}}" id="{{asCategoryId}}" scroll-x="true" scroll-left="{{asScrollLeft}}" scroll-with-animation="{{asScrollAnim}}">
+    <view class="as-category {{isFold?'as-category__fold':''}}">
+      <block wx:for="{{asItems}}" wx:key="id">
+        <view bindtap="{{asBindTapCategoryItem}}" id="{{index}}" data-id="{{item.id}}" data-cmd="{{item.cmd}}" class="as-category__item as-category__item_{{item.id}} {{itemCls}} {{item.checked?'as-category__item_on':''}}">
+          <view class="as-category__icon">
+            <image mode='widthFix' src="{{item.imgUrl}}"></image>
+          </view>
+          <view class="as-category__label">{{item.name}}</view>
+        </view>
+      </block>
+    </view>
+  </scroll-view>
+</template>

@@ -1,0 +1,39 @@
+.as-tabbar {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  width: 100%;
+  background-color: #f7f7fa;
+}
+
+.as-tabbar__item {
+  display: block;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  flex: 1;
+  padding: 5px 0;
+  color: #999;
+  text-align: center;
+  position: relative;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.as-tabbar__item.as-bar__item_on {
+  color: #09bb07;
+}
+
+.as-tabbar__label::before {
+  content: '';
+  left: 50%;
+  bottom: 0;
+  width: 100%;
+  height: 5rpx;
+  display: none;
+  position: absolute;
+  background-color: #09bb07;
+  transform: translateX(-50%);
+}
+
+.as-tabbar__item.as-bar__item_on .as-tabbar__label::before{
+  display: block;
+}
