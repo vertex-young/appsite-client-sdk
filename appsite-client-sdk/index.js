@@ -41,11 +41,21 @@ import { openSetting } from './lib/opensetting';
 
 import * as utils from './lib/utils';
 
+//--加载页面处理函数--
+import { asTapTabbarItem } from './pages/bar/tabbar';
+import { asCarouselChange } from './pages/carousel/carousel';
+import * as category from './pages/category/category';
+
 module.exports = {
   AppSite: AppSite,
   utils: utils,
   wxApi: wxApi,
   wxUser: wxUser,
   qcloud: qcloud,
-  openSetting: openSetting
+  openSetting: openSetting,
+
+  asTapTabbarItem: asTapTabbarItem,
+  asCarouselChange: asCarouselChange,
+  asCategoryScroll: category.asCategoryScroll,
+  asTapCategoryItem: category.asTapCategoryItem
 };

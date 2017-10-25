@@ -110,6 +110,14 @@ class WXApi {
     )
   }
 
+  getSystemInfoSync(){
+    try {
+      return wx.getSystemInfoSync();
+    } catch (e) {
+    }
+    return null;
+  }
+
 }
 
 var wxApi = new WXApi();
