@@ -171,6 +171,26 @@ class WXUser {
       }
     );
   }
+
+  // 设置页面用户信息
+  setPageUserInfo(page) {
+    let me=this;
+    if(!page || !page.data) {
+      return;
+    }
+    if(!page.data.userInfo){
+      let userInfo = me.getUserInfo();
+      if(userInfo) {
+        page.setData({userInfo:userInfo});
+      } else {
+        me.login({
+          success: function (userInfo) {
+            page.setData({ userInfo: userInfo });
+          }
+        })
+      }
+    }
+  }
 }
 
 var wxUser = new WXUser();
