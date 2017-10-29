@@ -1,0 +1,15 @@
+<template name="asUserInfo">
+  <button size="{{asSize?asSize:'default'}}"
+          type="{{asType?asType:'default'}}" 
+          plain="{{asPlain?asPlain:false}}"
+          disabled="{{asDisabled}}"
+          loading="{{asLoading}}"
+          lang="{{asLang?asLang:'zh_CN'}}" 
+          bindgetuserinfo="{{asBindGetUserInfo}}" 
+          
+          open-type="getUserInfo" 
+          
+          hover-class="{{asHoverClass?asHoverClass:'button-hover'}}" 
+          hover-stop-propagation="{{asHoverStopPropagation}}"
+          class="as-user-info">{{asLabel}}</button>
+</template>

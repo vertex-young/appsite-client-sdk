@@ -1,0 +1,16 @@
+.as-contact {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  font: inherit;
+  border-radius:0;
+  line-height:inherit;
+}
+.as-contact::after{
+  content: none;
+}
+
+.as-contact[plain] {
+  border:0;
+}

@@ -1,0 +1,13 @@
+<template name="asContact">
+  <button size="{{asSize?asSize:'default'}}" 
+          bindcontact="{{asBindContact}}"
+          session-from="{{asSessionFrom}}"
+          send-message-title="{{asSendMessageTitle}}"
+          send-message-path="{{asSendMessagePath}}"
+          send-message-img="{{asSendMessageImg}}"
+          show-message-card="{{asShowMessageCard}}"
+          plain="{{asPlain?asPlain:false}}" 
+          open-type="contact" 
+          hover-class="{{asHoverClass?asHoverClass:'button-hover'}}" 
+          class="as-contact">{{asLabel}}</button>
+</template>

@@ -1,0 +1,14 @@
+.as-phone-number{
+  border: 0;
+  width: 100%;
+  height: 100%;
+  font: inherit;
+  border-radius: 0;
+}
+.as-phone-number::after{
+  content: none;
+}
+
+.as-phone-number[plain] {
+  border: 0;
+}

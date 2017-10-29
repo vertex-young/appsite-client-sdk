@@ -1,0 +1,15 @@
+<template name="asPhoneNumber">
+  <button size="{{asSize?asSize:''}}"
+          type="{{asType?asType:''}}" 
+          plain="{{asPlain?asPlain:false}}"
+          disabled="{{asDisabled}}"
+          loading="{{asLoading}}"
+          open-type="getPhoneNumber" 
+      
+          bindgetphonenumber="{{asBindGetPhoneNumber}}"
+           
+          
+          hover-class="{{asHoverClass?asHoverClass:'button-hover'}}" 
+          hover-stop-propagation="{{asHoverStopPropagation}}"
+          class="as-phone-number">{{asLabel}}</button>
+</template>
